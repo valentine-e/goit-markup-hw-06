@@ -779,6 +779,10 @@ p {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.close-btn svg {
+    transition: fill 250ms var(--timing-function);
+}
+
 .close-btn:hover svg,
 .close-btn:focus svg {
     fill: var(--accent-color);
@@ -827,6 +831,8 @@ p {
     position: absolute;
     top: 11px;
     left: 12px;
+
+    transition: fill 250ms var(--timing-function);
 }
 
 .form-field input {
@@ -836,6 +842,8 @@ p {
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     margin-bottom: 10px;
+
+    transition: outline-color 250ms var(--timing-function);
 }
 
 .form-field input:focus,
@@ -856,6 +864,8 @@ textarea {
     padding: 12px 16px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+
+    transition: outline-color 250ms var(--timing-function);
 }
 
 .form-field textarea::placeholder {
@@ -890,6 +900,9 @@ textarea {
 
     border: 2px solid black;
     border-radius: 4px;
+
+    transition: background-color 250ms var(--timing-function);
+    transition: border-color 250ms var(--timing-function);
 }
 
 .checkbox:checked + .checkbox-icon {
